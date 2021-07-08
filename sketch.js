@@ -41,6 +41,9 @@ function draw(){
   background(0);
   Engine.update(engine);
 
+
+
+
   var rand = Math.round(random(1,2));
   if(frameCount%80===0){
     thunderCreatedFrame = frameCount;
@@ -67,6 +70,8 @@ function draw(){
     drops[i].display();
     drops[i].update();
   }
+
+  if(keyDown)
  
   
   drawSprites();
