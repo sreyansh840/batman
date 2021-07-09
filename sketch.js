@@ -41,7 +41,12 @@ function draw(){
   background(0);
   Engine.update(engine);
 
-
+  if(keyDown(LEFT_ARROW)){
+    man_image.velocityX=-6;
+      }
+      if(keyDown(RIGHT_ARROW)){
+        man_image.velocityX=6;
+          }
 
 
   var rand = Math.round(random(1,2));
@@ -71,8 +76,7 @@ function draw(){
     drops[i].update();
   }
 
-  if(keyDown)
- 
+  
   
   drawSprites();
 }
